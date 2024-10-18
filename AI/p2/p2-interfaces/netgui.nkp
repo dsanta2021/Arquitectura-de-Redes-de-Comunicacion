@@ -1,0 +1,39 @@
+<nodes>
+position(666.0,307.0); NKRouter("r1")
+position(324.0,132.0); NKCompaq("pc1")
+position(461.0,306.0); NKHub("hub1")
+position(883.0,307.0); NKRouter("r3")
+position(883.0,479.0); NKHub("hub2")
+position(460.0,479.0); NKRouter("r2")
+position(1041.0,602.0); NKCompaq("pc2")
+<\nodes>
+<connections>
+<link>
+Connect("pc1")
+To("hub1")
+<\link>
+<link>
+Connect("hub1")
+To("r1")
+<\link>
+<link>
+Connect("hub2")
+To("pc2")
+<\link>
+<link>
+Connect("hub1")
+To("r2")
+<\link>
+<link>
+Connect("r3")
+To("r1")
+<\link>
+<link>
+Connect("r3")
+To("hub2")
+<\link>
+<link>
+Connect("r2")
+To("hub2")
+<\link>
+<\connections>
